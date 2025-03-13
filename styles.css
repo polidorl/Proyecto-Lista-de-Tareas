@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ body {
+    background: url(./imagenes/fondoBlueJeen.jpg) no-repeat center center/ cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+ }
+
+ /* Contenedor */
+ .contenedor {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* width: 100%;
+    max-width: 700px;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column; */
+     }
+
+ /* Titulo */
+ h1{
+   font-size: 2.5rem;
+   text-align: center;
+    margin-bottom: 20px;
+ }
+
+/* Campo de entrada */
+ input {
+    background-color: azure;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    font-size:1rem;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+ }
+
+ input:focus {
+   border-color: #2727d8;
+   outline: none;
+}
+
+/* Botón */
+ button {
+    width:100px;
+    height: 40px;
+    background-color: #2727d8;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+    user-select: none; /*Que no se pueda seleccionar el texto del boton*/
+ }
+
+ button:hover {
+   background-color: #1a1a8a;
+}
+
+/* Estilos para la lista de tareas */
+#lista-de-tareas {
+    /* border: 2px solid black; */
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+   h1 {
+       font-size: 2rem;
+   }
+
+   #ingresar-tarea {
+       width: calc(100% - 100px);
+       font-size: 0.9rem;
+   }
+
+   button {
+       padding: 10px 15px;
+       font-size: 0.9rem;
+   }
+
+   .tarea p {
+       font-size: 1rem;
+   }
+
+   .iconos i {
+       font-size: 1rem;
+   }
+}
+
+@media (max-width: 480px) {
+   h1 {
+       font-size: 1.75rem;
+   }
+
+   #ingresar-tarea {
+       width: 100%;
+       margin-right: 0;
+       margin-bottom: 10px;
+   }
+
+   button {
+       width: 100%;
+   }
+
+   .tarea {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .iconos {
+       margin-top: 10px;
+   }
+}
