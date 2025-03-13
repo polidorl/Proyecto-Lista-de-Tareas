@@ -1,3 +1,6 @@
+This site is live at:
+https://github.com/polidorl/Proyecto-Lista-de-Tareas/settings/pages
+
 Esta aplicación fue desarrollada como un ejercicio práctico para fortalecer habilidades en la manipulación del DOM y el uso de JavaScript. Su propósito es demostrar de manera clara cómo interactuar con el DOM, gestionar eventos y aplicar estilos dinámicos utilizando únicamente JavaScript. Aunque el objetivo principal es practicar la aplicación de estilos directamente desde JavaScript, es importante destacar que este enfoque no siempre es el más recomendado en proyectos reales.
 
 Si bien es posible aplicar estilos directamente en JavaScript, se recomienda utilizar CSS para definir los estilos siempre que sea posible. Esta práctica no solo mejora la mantenibilidad del código, sino que también promueve una separación de responsabilidades más clara: HTML para la estructura, CSS para los estilos y JavaScript para la lógica. Sin embargo, el uso de estilos dinámicos en JavaScript es especialmente útil en situaciones donde los estilos deben aplicarse de manera condicional o basados en interacciones del usuario.
